@@ -1,0 +1,122 @@
+[
+ {
+  "id": 1,
+  "name": "Starter Plan",
+  "description": "Good for beginners",
+  "price": 5,
+  "period": "monthly",
+  "tag": "new",
+  "tagType": "new",
+  "features": [
+   "5 templates",
+   "Basic editing",
+   "Export to PDF"
+  ],
+  "icon": "starter-icon"
+ },
+ {
+  "id": 2,
+  "name": "Basic Plan",
+  "description": "Perfect for individuals",
+  "price": 9,
+  "period": "monthly",
+  "tag": "popular",
+  "tagType": "popular",
+  "features": [
+   "20+ templates",
+   "ATS optimization",
+   "Export to PDF"
+  ],
+  "icon": "basic-icon"
+ },
+ {
+  "id": 3,
+  "name": "Standard Plan",
+  "description": "Balanced features for regular users",
+  "price": 19,
+  "period": "monthly",
+  "tag": "best seller",
+  "tagType": "best-seller",
+  "features": [
+   "50+ templates",
+   "Advanced editing",
+   "Export to PDF & DOCX"
+  ],
+  "icon": "standard-icon"
+ },
+ {
+  "id": 4,
+  "name": "Pro Plan",
+  "description": "For professionals",
+  "price": 29,
+  "period": "monthly",
+  "tag": "popular",
+  "tagType": "highlight",
+  "features": [
+   "100+ templates",
+   "Advanced ATS optimization",
+   "Priority support"
+  ],
+  "icon": "pro-icon"
+ },
+ {
+  "id": 5,
+  "name": "Business Plan",
+  "description": "Best for small teams",
+  "price": 49,
+  "period": "monthly",
+  "tag": "new",
+  "tagType": "new",
+  "features": [
+   "150+ templates",
+   "Team sharing",
+   "Cloud storage"
+  ],
+  "icon": "business-icon"
+ },
+ {
+  "id": 6,
+  "name": "Enterprise Plan",
+  "description": "Full solution for companies",
+  "price": 99,
+  "period": "yearly",
+  "tag": "best seller",
+  "tagType": "best-seller",
+  "features": [
+   "Unlimited templates",
+   "Team collaboration",
+   "Dedicated support"
+  ],
+  "icon": "enterprise-icon"
+ },
+ {
+  "id": 7,
+  "name": "Lifetime Plan",
+  "description": "Pay once, use forever",
+  "price": 199,
+  "period": "one-time",
+  "tag": "popular",
+  "tagType": "highlight",
+  "features": [
+   "All premium templates",
+   "Lifetime updates",
+   "All export formats"
+  ],
+  "icon": "lifetime-icon"
+ },
+ {
+  "id": 8,
+  "name": "Ultimate Plan",
+  "description": "All-in-one premium package",
+  "price": 299,
+  "period": "yearly",
+  "tag": "new",
+  "tagType": "highlight",
+  "features": [
+   "Everything included",
+   "Premium support",
+   "Early feature access"
+  ],
+  "icon": "ultimate-icon"
+ }
+]
