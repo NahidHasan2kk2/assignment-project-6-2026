@@ -1,7 +1,15 @@
 import React from 'react';
 import { AiOutlineDelete } from 'react-icons/ai';
+import { toast } from 'react-toastify';
 
-const SelectedDataCard = ({ data }) => {
+const SelectedDataCard = ({ data, selectedData, setSelectedData }) => {
+ // console.log(data);
+ const handleDeleteButton = (data) => {
+  const filterData = selectedData.filter(item => item.id !== data.id);
+  console.log(filterData);
+  toast.error(`${data.name} deleted successfully!`);
+  setSelectedData(filterData);
+ }
  return (
   < div className='flex justify-between  mb-2 p-3 rounded bg-base-400 shadow-xl/10 border-t-1' >
    <div className='flex justify-center items-center gap-2]'>
@@ -12,7 +20,7 @@ const SelectedDataCard = ({ data }) => {
     </div>
    </div>
    <div>
-    <button className='btn bg-red-100'><AiOutlineDelete className='text-red-900' /></button>
+    <button onClick={() => handleDeleteButton(data)} className='btn bg-red-100'><AiOutlineDelete className='text-red-900' /></button>
    </div>
   </div >
  );

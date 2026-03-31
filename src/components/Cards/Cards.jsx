@@ -1,8 +1,10 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const Cards = ({ card, selectedData, setSelectedData }) => {
   const HandleSelectButton = (card) => {
     // console.log(card);
+    toast.info(`${card.name} added successfully!`);
     setSelectedData([...selectedData, card]);
   }
   //  console.log(card);

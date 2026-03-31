@@ -6,6 +6,8 @@ import MainSection from './components/MainSection/MainSection'
 import Navbar from './components/Navbar/Navbar'
 import Stats from './components/Stats/Stats'
 import Footer from './components/Footer/Footer'
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify'
 
 function App() {
   const [loadDatas, setLoadDatas] = useState([]);
@@ -33,7 +35,7 @@ function App() {
         setSelectedData={setSelectedData}
       ></MainSection>
       <Footer></Footer>
-
+      <ToastContainer />
     </>
   )
 }

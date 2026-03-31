@@ -1,18 +1,26 @@
 import React from 'react';
 
 import SelectedDataCard from '../SelectedDataCard/SelectedDataCard';
+import { toast } from 'react-toastify';
 
-const SelectedCards = ({ selectedData }) => {
+const SelectedCards = ({ selectedData, setSelectedData }) => {
 
   const totalAmount = selectedData.reduce((total, item) => {
     return total + item.price;
   }, 0);
 
-  console.log(selectedData);
+  const handleProcedToCheckout = () => {
+    toast.success("Thank you for checkout");
+    setSelectedData([]);
+  }
+
+  // console.log(selectedData);
   const datas = selectedData.map(data => (
     <SelectedDataCard
       key={data.id}
       data={data}
+      selectedData={selectedData}
+      setSelectedData={setSelectedData}
     />
   ))
 
@@ -38,7 +46,7 @@ const SelectedCards = ({ selectedData }) => {
               <h1 className='font-bold'>Total Amount </h1>
               <p className='mr-20 font-bold text-xl'>$ {totalAmount}</p>
             </div>
-            <button className='btn btn-primary btn-block rounded-3xl'>Proceed to Checkout</button>
+            <button onClick={() => handleProcedToCheckout()} className='btn btn-primary btn-block rounded-3xl'>Proceed to Checkout</button>
           </div>
 
 
