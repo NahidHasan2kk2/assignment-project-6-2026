@@ -12,7 +12,8 @@
    "Basic editing",
    "Export to PDF"
   ],
-  "icon": "starter-icon"
+  "icon": "starter-icon",
+  "img": "../src/assets/products/operation.png"
  },
  {
   "id": 2,
@@ -27,14 +28,15 @@
    "ATS optimization",
    "Export to PDF"
   ],
-  "icon": "basic-icon"
+  "icon": "basic-icon",
+  "img": "../src/assets/products/social-media.png"
  },
  {
   "id": 3,
   "name": "Standard Plan",
   "description": "Balanced features for regular users",
   "price": 19,
-  "period": "monthly",
+  "period": "One-time",
   "tag": "best seller",
   "tagType": "best-seller",
   "features": [
@@ -42,7 +44,8 @@
    "Advanced editing",
    "Export to PDF & DOCX"
   ],
-  "icon": "standard-icon"
+  "icon": "standard-icon",
+  "img": "../src/assets/products/design-tool.png"
  },
  {
   "id": 4,
@@ -57,7 +60,8 @@
    "Advanced ATS optimization",
    "Priority support"
   ],
-  "icon": "pro-icon"
+  "icon": "pro-icon",
+  "img": "../src/assets/products/writing_2327400 1.png"
  },
  {
   "id": 5,
@@ -72,7 +76,8 @@
    "Team sharing",
    "Cloud storage"
   ],
-  "icon": "business-icon"
+  "icon": "business-icon",
+  "img": "../src/assets/products/portfolio.png"
  },
  {
   "id": 6,
@@ -87,36 +92,7 @@
    "Team collaboration",
    "Dedicated support"
   ],
-  "icon": "enterprise-icon"
- },
- {
-  "id": 7,
-  "name": "Lifetime Plan",
-  "description": "Pay once, use forever",
-  "price": 199,
-  "period": "one-time",
-  "tag": "popular",
-  "tagType": "highlight",
-  "features": [
-   "All premium templates",
-   "Lifetime updates",
-   "All export formats"
-  ],
-  "icon": "lifetime-icon"
- },
- {
-  "id": 8,
-  "name": "Ultimate Plan",
-  "description": "All-in-one premium package",
-  "price": 299,
-  "period": "yearly",
-  "tag": "new",
-  "tagType": "highlight",
-  "features": [
-   "Everything included",
-   "Premium support",
-   "Early feature access"
-  ],
-  "icon": "ultimate-icon"
+  "icon": "enterprise-icon",
+  "img": "../src/assets/products/portfolio.png"
  }
 ]

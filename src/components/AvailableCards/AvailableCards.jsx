@@ -1,12 +1,16 @@
-import React, { use } from 'react';
+import Cards from "../Cards/Cards";
+
 
 const AvailableCards = ({ loadDatas }) => {
 
 
- console.log(loadDatas);
+
  return (
-  <div>
-   <h1>cards length :{loadDatas.length} </h1>
+  <div className="grid grid-cols-3 gap-4  my-10">
+   {
+    loadDatas.map(card => <Cards key={card.id} card={card}></Cards>)
+   }
+
   </div>
  );
 };

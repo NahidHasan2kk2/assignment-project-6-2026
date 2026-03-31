@@ -5,6 +5,7 @@ import Banner from './components/Banner/Banner'
 import MainSection from './components/MainSection/MainSection'
 import Navbar from './components/Navbar/Navbar'
 import Stats from './components/Stats/Stats'
+import Footer from './components/Footer/Footer'
 
 function App() {
   const [loadDatas, setLoadDatas] = useState([]);
@@ -25,6 +26,7 @@ function App() {
       <MainSection
         loadDatas={loadDatas}
       ></MainSection>
+      <Footer></Footer>
 
     </>
   )

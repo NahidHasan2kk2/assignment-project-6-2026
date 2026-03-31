@@ -1,8 +1,12 @@
 
+import { useState } from 'react';
 import AvailableCards from '../AvailableCards/AvailableCards';
+import SelectedCards from '../SelectedCards/SelectedCards';
 
 const MainSection = ({ loadDatas }) => {
 
+ const [productsButton, setProductsButton] = useState('Products');
+ console.log(productsButton);
 
  return (
   <div className='mt-6 container mx-auto'>
@@ -14,17 +18,21 @@ const MainSection = ({ loadDatas }) => {
       <p className="py-2">
        Choose from our curated collection of premium digital products designed to boost your productivity and creativity.
       </p>
-      <div>
-       <button className="btn btn-primary rounded-4xl">Products</button>
-       <button className="btn">Cart 2</button>
+      <div className='space-x-2'>
+       <button onClick={() => setProductsButton('Products')} className={`  ${productsButton === "Products" ? "btn btn-primary " : "btn"} `}>Products</button>
+       <button onClick={() => setProductsButton('Cart')} className={`  ${productsButton === "Cart" ? "btn btn-primary " : "btn"} `}>Cart 2</button>
       </div>
      </div>
     </div>
    </div>
    <div>
-    <AvailableCards
-     loadDatas={loadDatas}
-    ></AvailableCards>
+    {
+     productsButton === 'Products' ?
+      <AvailableCards
+       loadDatas={loadDatas}
+      ></AvailableCards> :
+      <SelectedCards></SelectedCards>
+    }
    </div>
   </div>
 
