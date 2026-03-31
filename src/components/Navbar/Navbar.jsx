@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaCartShopping } from 'react-icons/fa6';
 
-const Navbar = () => {
+const Navbar = ({ selectedData }) => {
  return (
   <div>
    <div className="navbar bg-base-100 shadow-sm container mx-auto">
@@ -39,6 +39,7 @@ const Navbar = () => {
     </div>
     <div className="navbar-end space-x-3">
      <FaCartShopping />
+     <button>{selectedData.length}</button>
      <a href="" className='btn'>Login</a>
      <a className="btn btn-primary">Get Started</a>
     </div>

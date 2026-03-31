@@ -9,6 +9,7 @@ import Footer from './components/Footer/Footer'
 
 function App() {
   const [loadDatas, setLoadDatas] = useState([]);
+  const [selectedData, setSelectedData] = useState([]);
   useEffect(() => {
     const loadData = async () => {
       const res = await fetch('/data.json');
@@ -20,11 +21,16 @@ function App() {
 
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar
+        selectedData={selectedData}
+      ></Navbar>
       <Banner></Banner>
       <Stats></Stats>
       <MainSection
+
         loadDatas={loadDatas}
+        selectedData={selectedData}
+        setSelectedData={setSelectedData}
       ></MainSection>
       <Footer></Footer>
 
