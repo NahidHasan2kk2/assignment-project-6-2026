@@ -9,6 +9,7 @@ import Footer from './components/Footer/Footer'
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify'
 import StepSection from './components/StepSection/StepSection'
+import PricingCard from './components/PricingCard/PricingCard'
 
 function App() {
   const [loadDatas, setLoadDatas] = useState([]);
@@ -36,6 +37,7 @@ function App() {
         setSelectedData={setSelectedData}
       ></MainSection>
       <StepSection></StepSection>
+      <PricingCard></PricingCard>
       <Footer></Footer>
       <ToastContainer />
     </>
