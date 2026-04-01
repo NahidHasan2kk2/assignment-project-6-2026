@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { toast } from 'react-toastify';
 
 const Cards = ({ card, selectedData, setSelectedData }) => {
+  const [added, setAdded] = useState(false);
   const HandleSelectButton = (card) => {
     // console.log(card);
     toast.info(`${card.name} added successfully!`);
+    setAdded(true);
     setSelectedData([...selectedData, card]);
+    setTimeout(() => setAdded(false), 1500);
+
   }
   //  console.log(card);
   return (
@@ -45,7 +49,14 @@ const Cards = ({ card, selectedData, setSelectedData }) => {
 
           </ul>
           <div className="mt-6">
-            <button onClick={() => HandleSelectButton(card)} className="btn btn-primary rounded-4xl btn-block">Buy Now</button>
+            <button
+
+              onClick={() => HandleSelectButton(card)}
+              className={added ? "btn btn-info  rounded-4xl btn-block" : "btn btn-primary rounded-4xl btn-block"}
+            >
+              {added ? "Added to Card" : "Buy Now"}
+
+            </button>
           </div>
         </div>
       </div>
