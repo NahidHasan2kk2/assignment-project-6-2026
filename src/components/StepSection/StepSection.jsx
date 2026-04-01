@@ -10,7 +10,7 @@ const StepSection = () => {
     <h1 className='font-bold text-3xl'>Get Started in 3 Steps</h1>
     <p className='opacity-70'>Start using premium digital tools in minutes, not hours.</p>
    </div>
-   <div className='grid grid-cols-3 gap-5'>
+   <div className='grid lg:grid-cols-3 gap-5'>
     <div className="card bg-base-300  shadow-sm">
      <div className='text-end'>
       <button className='btn btn-primary mt-3 mr-3  rounded-full '>

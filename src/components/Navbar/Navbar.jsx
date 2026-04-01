@@ -3,8 +3,8 @@ import { FaCartShopping } from 'react-icons/fa6';
 
 const Navbar = ({ selectedData }) => {
  return (
-  <div>
-   <div className="navbar bg-base-100 shadow-sm container mx-auto">
+  <div className='container mx-auto'>
+   <div className="navbar bg-base-100 shadow-sm fixed top-0 left-0 z-50 lg:px-20">
     <div className="navbar-start">
      <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -23,7 +23,7 @@ const Navbar = ({ selectedData }) => {
        <li><a>FAQ</a></li>
       </ul>
      </div>
-     <a className=" font-bold text-3xl">DigiTools</a>
+     <a className=" font-bold lg:text-3xl">DigiTools</a>
     </div>
     <div className="navbar-center hidden lg:flex">
      <ul className="menu menu-horizontal px-1">

@@ -27,6 +27,7 @@ function App() {
     <>
       <Navbar
         selectedData={selectedData}
+
       ></Navbar>
       <Banner></Banner>
       <Stats></Stats>

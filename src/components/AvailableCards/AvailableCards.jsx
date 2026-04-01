@@ -5,17 +5,17 @@ const AvailableCards = ({ loadDatas, selectedData, setSelectedData }) => {
 
 
 
- return (
-  <div className="grid grid-cols-3 gap-4  my-10">
-   {
-    loadDatas.map(card => <Cards
-     setSelectedData={setSelectedData}
-     selectedData={selectedData}
-     key={card.id} card={card}></Cards>)
-   }
+  return (
+    <div className="grid lg:grid-cols-3 gap-4  my-10">
+      {
+        loadDatas.map(card => <Cards
+          setSelectedData={setSelectedData}
+          selectedData={selectedData}
+          key={card.id} card={card}></Cards>)
+      }
 
-  </div>
- );
+    </div>
+  );
 };
 
 export default AvailableCards;

@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
   return (
     <div className='container mx-auto mb-10 bg-gradient-to-t from-[#0f1828] to-[#0e0a31] rounded'>
-      <footer className="footer grid md:grid-cols-4 sm:footer-horizontal   text-white opacity-80 p-10">
+      <footer className="footer grid lg:grid-cols-4 grid-cols-2 sm:footer-horizontal   text-white opacity-80 p-10">
         <nav>
           <h1 className='font-bold text-3xl'>DigiTools</h1>
           <p>Premium digital tools for creators, professionals, and businesses. Work smarter with our suite of powerful tools.</p>

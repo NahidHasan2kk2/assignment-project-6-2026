@@ -2,7 +2,7 @@ import React from 'react';
 
 const Stats = () => {
  return (
-  <div className='container mx-auto bg-[#4F39F6] h-[200px] rounded flex justify-center items-center space-x-10 text-center'>
+  <div className='container mx-auto bg-[#4F39F6] lg:h-[200px] rounded flex flex-col md:flex-row flex-wrap justify-center items-center text-center p-5 md:space-x-10 space-y-5 md:space-y-0'>
    <div className="stats shadow">
     <div className="stat space-y-2">
 
@@ -11,7 +11,7 @@ const Stats = () => {
     </div>
 
    </div>
-   <div className="divider divider-horizontal divider-start h-[100px] my-auto"></div>
+   <div className="divider divider-horizontal divider-start  lg:h-[100px] my-auto"></div>
    <div className="stats shadow">
     <div className="stat space-y-2">
 
@@ -19,7 +19,7 @@ const Stats = () => {
      <div className="stat-desc text-white opacity-80">Premium Tools</div>
     </div>
    </div>
-   <div className="divider divider-horizontal divider-start h-[100px] my-auto"></div>
+   <div className="divider divider-horizontal divider-start lg:h-[100px] my-auto"></div>
    <div className="stats shadow">
     <div className="stat space-y-2">
 

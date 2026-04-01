@@ -44,7 +44,7 @@ const SelectedCards = ({ selectedData, setSelectedData }) => {
             </div>
             <div className='flex justify-between'>
               <h1 className='font-bold'>Total Amount </h1>
-              <p className='mr-20 font-bold text-xl'>$ {totalAmount}</p>
+              <p className='lg:mr-10 font-bold text-xl'>$ {totalAmount}</p>
             </div>
             <button onClick={() => handleProcedToCheckout()} className='btn btn-primary btn-block rounded-3xl'>Proceed to Checkout</button>
           </div>
