@@ -1,16 +1,15 @@
-# React + Vite
+# Create Beautiful Github Readme with following description
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Name of your Project: 
+assigment-project-6-2026
 
-Currently, two official plugins are available:
+###  A little Description :
+this is the 6th assignment for learning web development course by programing hero
+###  Technology that you use
+1.html 
+2.tailwind css with daisyUI
+3.javascrift with react
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### 3 Features about your project.
+this project is demo of the real projects so i learn many tricks for build this type of project.  
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
