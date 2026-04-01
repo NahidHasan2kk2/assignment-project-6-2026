@@ -37,12 +37,14 @@ const Navbar = ({ selectedData }) => {
       <li><a>FAQ</a></li>
      </ul>
     </div>
-    <div className="navbar-end space-x-3 relative">
-     <FaCartShopping className='mr-5' />
+    <div className="navbar-end space-x-3 ">
+     <div className='relative w-5'>
+      <FaCartShopping className='mr-5' />
 
-     <button className='badge badge-error badge-xs absolute left-25 top-1 p-1'>
-      {selectedData.length}
-     </button>
+      <span className='badge badge-error badge-xs absolute -top-2 -right-1 p-1'>
+       {selectedData.length}
+      </span>
+     </div>
      <a href="" className='btn'>Login</a>
      <a className="btn btn-primary">Get Started</a>
     </div>

@@ -13,7 +13,7 @@
    "Export to PDF"
   ],
   "icon": "starter-icon",
-  "img": "../src/assets/products/operation.png"
+  "img": "./operation.png"
  },
  {
   "id": 2,
@@ -29,7 +29,7 @@
    "Export to PDF"
   ],
   "icon": "basic-icon",
-  "img": "../src/assets/products/social-media.png"
+  "img": "./social-media.png"
  },
  {
   "id": 3,
@@ -45,7 +45,7 @@
    "Export to PDF & DOCX"
   ],
   "icon": "standard-icon",
-  "img": "../src/assets/products/design-tool.png"
+  "img": "./design-tool.png"
  },
  {
   "id": 4,
@@ -61,7 +61,7 @@
    "Priority support"
   ],
   "icon": "pro-icon",
-  "img": "../src/assets/products/writing_2327400 1.png"
+  "img": "./writing_2327400 1.png"
  },
  {
   "id": 5,
@@ -77,7 +77,7 @@
    "Cloud storage"
   ],
   "icon": "business-icon",
-  "img": "../src/assets/products/portfolio.png"
+  "img": "./portfolio.png"
  },
  {
   "id": 6,
@@ -93,6 +93,6 @@
    "Dedicated support"
   ],
   "icon": "enterprise-icon",
-  "img": "../src/assets/products/portfolio.png"
+  "img": "./portfolio.png"
  }
 ]
